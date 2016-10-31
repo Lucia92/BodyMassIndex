@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user3.bodymassindex.MainActivity"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_height"
+        android:text="Body Mass Index Calculator"
+        android:layout_weight="0.25"
+        android:textSize="25sp"
+        android:padding="30dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.75"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/enter_height"
+            android:id="@+id/etHeight"
+            android:layout_weight="1"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_height"
+            android:text="Select Weight:"
+            android:textSize="15sp"
+            android:paddingBottom="10dp"
+            android:textColor="@android:color/holo_red_dark"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/rgWeight">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0-40"
+                    android:id="@+id/rbSmall"
+                    android:onClick="selectWeight"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="41-55"
+                    android:id="@+id/rbMedium"
+                    android:onClick="selectWeight" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="56-80"
+                    android:id="@+id/rbLarge"
+                    android:onClick="selectWeight"/>
+            </RadioGroup>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
